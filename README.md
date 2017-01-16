@@ -15,7 +15,8 @@ Please place DOM nodes like the sample in `index.html` and replace content of `.
 --
 
 	$('.ck-slide').ckSlide({
-	    	autoPlay:true
+	    	autoPlay:true,
+		interval: 3000,
 	});
 
 启动幻灯片（左右切换） Start slide (dissolve)
@@ -23,5 +24,6 @@ Please place DOM nodes like the sample in `index.html` and replace content of `.
 
 	$('.ck-slide').ckSlide({
 		autoPlay:true，
-		dir:"x"
+		interval: 3000,
+		dir:"x",
 	});
