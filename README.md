@@ -15,7 +15,7 @@ Please place DOM nodes like the sample in `index.html` and replace content of `.
 --
 
 	$('.ck-slide').ckSlide({
-	    	autoPlay:true,
+		autoPlay:true,
 		interval: 3000,
 	});
 
@@ -31,4 +31,4 @@ Please place DOM nodes like the sample in `index.html` and replace content of `.
 设置页面 Goto specific page
 --
 
-	$('.ck-slide').ckSlideGoto(0, 1);
+	$('.ck-slide').ckSlideGoto(0);
