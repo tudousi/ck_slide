@@ -71,7 +71,7 @@
                             index++;
                         }
                         change.call(that, index, old);
-                    }, 2000);
+                    }, opts['interval'] || 2000);
                 }
             }
             // 修正box
@@ -116,6 +116,7 @@
     $.fn.ckSlide.opts = {
         autoPlay: false,
         dir: null,
+        interval: 2000,
         isAnimate: false
     };
 })(jQuery);
