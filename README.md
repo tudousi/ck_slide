@@ -1,16 +1,27 @@
-ck_slide
+ck slide
 ========
 
-图片轮播
+简单的 JS+CSS JQuery幻灯片插件
+Simple slide implementation for JQuery using Javascript and CSS.
 
-// 渐变播放
-$('.ck-slide').ckSlide({
-    autoPlay:true
-    /*dir:"x"*/
-});
+使用 Instruction
+--
 
-// 左右滚动播放
-$('.ck-slide').ckSlide({
-    autoPlay:true，
-    dir:"x"
-});
+请参照`index.html`中的示例放置DOM元素，并将`.ck-slide-wrapper li`中的内容替换为需要的内容；
+
+Please place DOM nodes like the sample in `index.html` and replace content of `.ck-slide-wrapper li` to your own content.
+
+启动幻灯片（渐变） Start slide (dissolve)
+--
+
+	$('.ck-slide').ckSlide({
+	    	autoPlay:true
+	});
+
+启动幻灯片（左右切换） Start slide (dissolve)
+--
+
+	$('.ck-slide').ckSlide({
+		autoPlay:true，
+		dir:"x"
+	});
