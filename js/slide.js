@@ -55,13 +55,13 @@
             //  leave
             $(this).on('mouseleave', function(){
                 if(opts.autoPlay){
-                    startAtuoPlay();
+                    startAutoPlay();
                 }
                 $(this).find('.ctrl-slide').css({opacity:0.15});
             });
-            startAtuoPlay();
+            startAutoPlay();
             // auto play
-            function startAtuoPlay(){
+            function startAutoPlay(){
                 if(opts.autoPlay){
                     time  = setInterval(function(){
                         var old = index;
@@ -71,7 +71,7 @@
                             index++;
                         }
                         change.call(that, index, old);
-                    }, 2000);
+                    }, opts['interval'] || 2000);
                 }
             }
             // 修正box
@@ -110,9 +110,13 @@
         $(this).find('.ck-slidebox li').removeClass('current');
         $(this).find('.ck-slidebox li').eq(show).addClass('current');
     }
+    $.fn.ckSlideGoto = function(destination) {
+      change.call(this, destination, destination);
+    };
     $.fn.ckSlide.opts = {
         autoPlay: false,
         dir: null,
+        interval: 2000,
         isAnimate: false
     };
 })(jQuery);
