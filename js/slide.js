@@ -110,6 +110,9 @@
         $(this).find('.ck-slidebox li').removeClass('current');
         $(this).find('.ck-slidebox li').eq(show).addClass('current');
     }
+    $.fn.ckSlideGoto = function(destination) {
+      change.call(this, destination, destination);
+    };
     $.fn.ckSlide.opts = {
         autoPlay: false,
         dir: null,

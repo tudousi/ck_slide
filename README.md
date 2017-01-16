@@ -25,3 +25,8 @@ Please place DOM nodes like the sample in `index.html` and replace content of `.
 		autoPlay:true，
 		dir:"x"
 	});
+
+设置页面 Goto specific page
+--
+
+	$('.ck-slide').ckSlideGoto(0, 1);
